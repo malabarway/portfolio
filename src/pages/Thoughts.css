@@ -1,0 +1,60 @@
+.thoughts-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.thought-item {
+  border-bottom: 4px solid var(--border-color);
+  padding-bottom: 3rem;
+}
+
+.thought-meta {
+  display: flex;
+  gap: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.thought-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.thought-title:hover {
+  color: var(--accent-red);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+.thought-excerpt {
+  font-size: 1.25rem;
+  font-family: serif; /* Medium-style reading font */
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.thought-tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.tag {
+  background: var(--border-color);
+  color: var(--text-light);
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.tag:hover {
+  background: var(--accent-green);
+  color: var(--border-color);
+  cursor: pointer;
+}
